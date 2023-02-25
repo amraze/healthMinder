@@ -110,14 +110,6 @@ h6 {
     border-top: 4px ridge rgb(5, 207, 252);
 }
 
-.section-title {
-    background: url(../../assets/img/6177817673_5ba53ffc2a_z.jpg);
-    background-size: cover;
-    vertical-align: middle;
-    background-position: center;
-    color: #F0FEFF;
-}
-
 .service-description p {
     color: #377F8F;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -238,108 +230,6 @@ li:last-child {
     background-color: rgba(5, 207, 252, 0.62);
     border-bottom: none;
 }
-
-
-/* -------------------------------------- 1.1 heading-slider---------------------------------------- */
-.slider-inner {
-    /*background-color: rgba(21, 7, 7, 0.55);*/
-    background-color: rgba(51, 71, 90, 0.32);
-    width: 100%;
-    color: white;
-    height: 700px;
-}
-
-.slider-inner-text {
-    margin: 262px 0px;
-    width: 50%
-}
-
-.slider-1 {
-    background: url(../../assets/img/slider1.jpg);
-    width: 100%;
-    background-size: cover;
-    vertical-align: middle;
-    background-position-x: 75%;
-    background-position-y: 5%;
-}
-
-.slider-2 {
-    background: url(../../assets/img/slider2.jpg);
-    width: 100%;
-    background-size: cover;
-    background-position-x: 65%;
-    background-position-y: 5%;
-}
-
-.slider-3 {
-    background: url(../../assets/img/slider3.jpg);
-    width: 100%;
-    background-size: cover;
-    background-position-x: 75%;
-    background-position-y: 5%;
-}
-
-.slider-inner h1 {
-    margin-bottom: 35px;
-    font-size: 70px;
-}
-
-.slider-inner-text p {
-    font-size: 23px;
-}
-
-/* ========================================= 1. Home============================================= */
-
-
-/* -------------------------------------- 1.1 heading-slider---------------------------------------- */
-.slider-inner {
-    /*background-color: rgba(21, 7, 7, 0.55);*/
-    background-color: rgba(51, 71, 90, 0.32);
-    width: 100%;
-    color: white;
-    height: 700px;
-}
-
-.slider-inner-text {
-    margin: 262px 0px;
-    width: 50%
-}
-
-.slider-1 {
-    background: url(../../assets/img/slider1.jpg);
-    width: 100%;
-    background-size: cover;
-    vertical-align: middle;
-    background-position-x: 75%;
-    background-position-y: 5%;
-}
-
-.slider-2 {
-    background: url(../../assets/img/slider2.jpg);
-    width: 100%;
-    background-size: cover;
-    background-position-x: 65%;
-    background-position-y: 5%;
-}
-
-.slider-3 {
-    background: url(../../assets/img/slider3.jpg);
-    width: 100%;
-    background-size: cover;
-    background-position-x: 75%;
-    background-position-y: 5%;
-}
-
-.slider-inner h1 {
-    margin-bottom: 35px;
-    font-size: 70px;
-}
-
-.slider-inner-text p {
-    font-size: 23px;
-}
-
-/*---------------------------------------------- 1.2 starting-text ----------------------------------*/
 
 section.starting-text {
     background-color: rgba(70, 161, 180, 0.82);

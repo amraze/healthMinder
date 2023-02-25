@@ -17,6 +17,8 @@ import { BlogsPageComponent } from './blogs-page/blogs-page.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { FooterComponent } from './default-layout/footer/footer.component';
+import { NavbarComponent } from './default-layout/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     BlogsPageComponent,
     FaqPageComponent,
     GalleryPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    FooterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

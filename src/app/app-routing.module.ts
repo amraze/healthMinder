@@ -25,7 +25,7 @@ const routes: Routes = [
   { path: 'admin/gallery', component: GalleryComponent },
   { path: 'admin/categories', component: CategoriesComponent },
   // Pages Routes
-  { path: 'home', component: HomePageComponent },
+  { path: '', component: HomePageComponent },
   { path: 'services', component: ServicesPageComponent },
   { path: 'doctors', component: DoctorsPageComponent },
   { path: 'blogs', component: BlogsPageComponent },
