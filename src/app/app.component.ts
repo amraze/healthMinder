@@ -14,7 +14,6 @@ export class AppComponent {
 
   changeOfRoutes() {
     const url = this.router.url;
-    console.log(url);
     this.showFooter = !url.includes("login") && !url.includes("admin") && !url.includes("dashboard");
     this.showNavbar = !url.includes("admin") && !url.includes("dashboard");
   }

@@ -17,6 +17,7 @@ import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 import { FooterComponent } from './default-layout/footer/footer.component';
 import { NavbarComponent } from './default-layout/navbar/navbar.component';
 import { ServicesPageComponent } from './login-page/services-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ServicesPageComponent } from './login-page/services-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

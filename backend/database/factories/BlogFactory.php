@@ -19,7 +19,7 @@ class BlogFactory extends Factory
         return [
             'title' => fake()->title(),
             'image' => 'image',
-            'date' => fake()->date(),
+            'writer' => fake()->name(),
             'category' => fake()->word(),
             'body' => fake()->text(),
         ];

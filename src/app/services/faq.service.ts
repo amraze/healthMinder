@@ -19,8 +19,8 @@ export class FaqService {
   //----------------- Default Methods ----------------//
   constructor(private http: HttpClient) { }
   //-------------------- Methods ---------------------//
-  getFaqs(): Observable<any> {
-    return this.http.get<any>(this.apiUrl, { headers: this.headers });
+  getFaqs(page: number = 1): Observable<any> {
+    return this.http.get<any>(this.apiUrl + '?page=' + page, { headers: this.headers });
   }
   deleteFaq(id: number) {
     return this.http.delete<any>(this.apiUrl + '/' + id, { headers: this.headers });

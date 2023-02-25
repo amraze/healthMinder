@@ -19,8 +19,8 @@ export class BlogService {
   //----------------- Default Methods ----------------//
   constructor(private http: HttpClient) { }
   //-------------------- Methods ---------------------//
-  getBlogs(): Observable<any> {
-    return this.http.get<any>(this.apiUrl, { headers: this.headers });
+  getBlogs(page: number = 1): Observable<any> {
+    return this.http.get<any>(this.apiUrl + '?page=' + page, { headers: this.headers });
   }
   deleteBlog(id: number) {
     return this.http.delete<any>(this.apiUrl + '/' + id, { headers: this.headers });

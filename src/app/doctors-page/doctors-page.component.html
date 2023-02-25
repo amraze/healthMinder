@@ -18,274 +18,33 @@
 <section class="doctor-list">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-sm-6 col-xs-12">
+
+            <div class="col-lg-4 col-sm-6 col-xs-12" *ngFor="let doctor of doctors">
                 <div class="doctor-meta">
                     <div class="doctor-img">
-                        <img class="img-responsive center-block" src="assets/img/doctor1.jpg" alt="">
-                    </div>
-                    <div class="doctor-info">
-
-                        <div class="row">
-                            <div class="doctor-name text-center">
-                                john doe
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="position text-center">
-                                Orthopedic Surgeon
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="doctor-des text-center">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores minima eaque
-                                    blanditiis ipsa, doloribus consectetur provident officiis voluptatem magni molestias
-                                    optio eius, minus aliquam fugit officia temporibus aspernatur voluptatibus nesciunt!
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="doctor-social text-center">
-                                <ul class="contact">
-                                    <li class="online-contact">
-                                        <a href="#" data-toggle="tooltip" title="Share in Facebook"><i
-                                                class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li class="online-contact">
-                                        <a href="#" data-toggle="tooltip" title="Connect with Skype"><i
-                                                class="fa fa-skype"></i></a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-                <div class="doctor-meta">
-                    <div class="doctor-img">
-                        <img class="img-responsive center-block" src="assets/img/doctor2.jpg" alt="">
+                        <img class="img-responsive center-block" src="{{baseURL}}{{doctor.image}}" alt="">
                     </div>
                     <div class="doctor-info">
                         <div class="row">
                             <div class="doctor-name text-center">
-                                john doe
+                                {{doctor.name}}
                             </div>
                         </div>
                         <div class="row">
                             <div class="position text-center">
-                                gynecologist
+                                {{doctor.job}}
                             </div>
                         </div>
                         <div class="row">
                             <div class="doctor-des text-center">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores minima eaque
-                                    blanditiis ipsa, doloribus consectetur provident officiis voluptatem magni molestias
-                                    optio eius, minus aliquam fugit officia temporibus aspernatur voluptatibus nesciunt!
+                                    {{doctor.bio}}
                                 </p>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="doctor-social text-center">
-                                <ul class="contact">
-                                    <li class="online-contact">
-                                        <a href="#" data-toggle="tooltip" title="Share in Facebook"><i
-                                                class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li class="online-contact">
-                                        <a href="#" data-toggle="tooltip" title="Connect with Skype"><i
-                                                class="fa fa-skype"></i></a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-                <div class="doctor-meta">
-                    <div class="doctor-img">
-                        <img class="img-responsive center-block" src="assets/img/doctor3.jpg" alt="">
-                    </div>
-                    <div class="doctor-info">
-                        <div class="row">
-                            <div class="doctor-name text-center">
-                                john doe
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="position text-center">
-                                ent specialist
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="doctor-des text-center">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores minima eaque
-                                    blanditiis ipsa, doloribus consectetur provident officiis voluptatem magni molestias
-                                    optio eius, minus aliquam fugit officia temporibus aspernatur voluptatibus nesciunt!
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="doctor-social text-center">
-                                <ul class="contact">
-                                    <li class="online-contact">
-                                        <a href="#" data-toggle="tooltip" title="Share in Facebook"><i
-                                                class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li class="online-contact">
-                                        <a href="#" data-toggle="tooltip" title="Connect with Skype"><i
-                                                class="fa fa-skype"></i></a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-                <div class="doctor-meta">
-                    <div class="doctor-img">
-                        <img class="img-responsive center-block" src="assets/img/doctor4.jpg" alt="">
-                    </div>
-                    <div class="doctor-info">
-                        <div class="row">
-                            <div class="doctor-name text-center">
-                                john doe
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="position text-center">
-                                radiologist
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="doctor-des text-center">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores minima eaque
-                                    blanditiis ipsa, doloribus consectetur provident officiis voluptatem magni molestias
-                                    optio eius, minus aliquam fugit officia temporibus aspernatur voluptatibus nesciunt!
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="doctor-social text-center">
-                                <ul class="contact">
-                                    <li class="online-contact">
-                                        <a href="#" data-toggle="tooltip" title="Share in Facebook"><i
-                                                class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li class="online-contact">
-                                        <a href="#" data-toggle="tooltip" title="Connect with Skype"><i
-                                                class="fa fa-skype"></i></a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-                <div class="doctor-meta">
-                    <div class="doctor-img">
-                        <img class="img-responsive center-block" src="assets/img/doctor5.jpg" alt="">
-                    </div>
-                    <div class="doctor-info">
-                        <div class="row">
-                            <div class="doctor-name text-center">
-                                john doe
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="position text-center">
-                                cardiologist
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="doctor-des text-center">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores minima eaque
-                                    blanditiis ipsa, doloribus consectetur provident officiis voluptatem magni molestias
-                                    optio eius, minus aliquam fugit officia temporibus aspernatur voluptatibus nesciunt!
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="doctor-social text-center">
-                                <ul class="contact">
-                                    <li class="online-contact">
-                                        <a href="#" data-toggle="tooltip" title="Share in Facebook"><i
-                                                class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li class="online-contact">
-                                        <a href="#" data-toggle="tooltip" title="Connect with Skype"><i
-                                                class="fa fa-skype"></i></a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-                <div class="doctor-meta">
-                    <div class="doctor-img">
-                        <img class="img-responsive center-block" src="assets/img/doctor6.jpg" alt="">
-                    </div>
-                    <div class="doctor-info">
-                        <div class="row">
-                            <div class="doctor-name text-center">
-                                john doe
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="position text-center">
-                                dentist
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="doctor-des text-center">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores minima eaque
-                                    blanditiis ipsa, doloribus consectetur provident officiis voluptatem magni molestias
-                                    optio eius, minus aliquam fugit officia temporibus aspernatur voluptatibus nesciunt!
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="doctor-social text-center">
-                                <ul class="contact">
-                                    <li class="online-contact">
-                                        <a href="#" data-toggle="tooltip" title="Share in Facebook"><i
-                                                class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li class="online-contact">
-                                        <a href="#" data-toggle="tooltip" title="Connect with Skype"><i
-                                                class="fa fa-skype"></i></a>
-                                    </li>
-
-                                </ul>
-                            </div>
+                        <div class="row text-center">
+                            <div><b>Joined : </b>{{doctor.created_at.split('T')[0]}}</div>
                         </div>
 
                     </div>

@@ -9,7 +9,7 @@ class FaqController extends Controller
 {
     public function index()
     {
-        $faqs = Faq::all();
+        $faqs = Faq::paginate(5);
         return response()->json($faqs);
     }
 }
