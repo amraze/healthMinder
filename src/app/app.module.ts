@@ -18,6 +18,8 @@ import { FooterComponent } from './default-layout/footer/footer.component';
 import { NavbarComponent } from './default-layout/navbar/navbar.component';
 import { ServicesPageComponent } from './login-page/services-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FullCalendarModule } from '@fullcalendar/angular';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FullCalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

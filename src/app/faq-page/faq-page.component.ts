@@ -35,6 +35,5 @@ export class FaqPageComponent {
     } else {
       answer.style.display = "none";
     }
-
   }
 }

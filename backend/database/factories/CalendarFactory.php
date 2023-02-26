@@ -17,7 +17,8 @@ class CalendarFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => fake()->title(),
+            'date' => fake()->dateTimeBetween('-30 days', '+30 days'),
         ];
     }
 }

@@ -1,1 +1,23 @@
-a=hello
+<div class="card container" style="margin-top:100px;">
+    <div class="card-body">
+        <div class="modal fade modal-primary" id="assemblyDescriptionModal" tabindex="-1" role="dialog"
+            aria-labelledby="assemblyDescriptionModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered " role="archive">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="assemblyDescriptionModalLabel">Informations sur l'assemblée : </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-12" id="assemblyDescription">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <full-calendar [options]="calendarOptions" data-toggle="modal" id="calendar">
+        </full-calendar>
+    </div>
+</div>
